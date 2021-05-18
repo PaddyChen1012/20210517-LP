@@ -2,9 +2,17 @@ body{
     width:100vw;
     height:100vh;
 }
+.t-0{top:0}
+.b-0{bottom:0;}
+.l-0{left:0;}
+.r-0{right:0;}
 .z-0{z-index:0;}
 .h6{font-size:1rem;}
 .title{height:80px;}
+.text-blue{color:#12699e;}
+.text-sky{color:#dbf9fb;}
+.bg-blue{background:#12699e;}
+.bg-sky{background:#dbf9fb;}
 .main-place{
     height:calc(100% - 80px);
     overflow-x:hidden;
@@ -44,7 +52,11 @@ body{
     width:100%;
     padding-bottom:61%;
 }
-
+.btn-where{
+    bottom: 5%;
+    right: 20.5%;
+}
+.ph-img{display:none !important;}
 /* 試玩頁面 */
 .modal-dialog{
     position: absolute;
@@ -54,4 +66,10 @@ body{
     right: 5%;
     max-width: none;
     margin: 0;
+}
+
+@media screen and (max-width:500px) {
+    .title-word{display:none !important;}
+    .pc-img{display:none !important;}
+    .ph-img{display:block !important;}
 }
