@@ -1,4 +1,4 @@
-body{width:100vw;height:100vh;}
+body{width:100vw;height:100vh;overflow-x:hidden;}
 .t-0{top:0}
 .b-0{bottom:0;}
 .l-0{left:0;}
@@ -8,11 +8,11 @@ body{width:100vw;height:100vh;}
 .z-1{z-index:1;}
 .h6{font-size:1rem;}
 .title{height:80px;}
+.title-word{vertical-align: middle;}
 .text-blue{color:#12699e;}
 .text-sky{color:#dbf9fb;}
 .bg-blue{background:#12699e;}
 .bg-sky{background:#dbf9fb;}
-.main-place{height:100%;overflow-x:hidden;}
 .h-60px{height: 60px;}
 .h-max{font-size: 5rem;}
 .bg-black-50{background-color:rgba(0,0,0,.5);}
@@ -47,7 +47,8 @@ body{width:100vw;height:100vh;}
 .game-pic{width:100%;padding-bottom:61%;}
 .btn-where{bottom: 3%;right: 16.25%;}
 .ph-img{display:none !important;}
-a img:hover{opacity:.8;}
+a img{-webkit-filter:drop-shadow(5px 5px 5px #333);}
+.service-icon{width:180px;height:180px;border:4px solid #12699e;}
 /* 試玩頁面 */
 .modal-dialog{
     position: absolute;
