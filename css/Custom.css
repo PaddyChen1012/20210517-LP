@@ -1,11 +1,9 @@
-body{
-    width:100vw;
-    height:100vh;
-}
+body{width:100vw;height:100vh;}
 .t-0{top:0}
 .b-0{bottom:0;}
 .l-0{left:0;}
 .r-0{right:0;}
+.lh{line-height:1.5rem;}
 .z-0{z-index:0;}
 .z-1{z-index:1;}
 .h6{font-size:1rem;}
@@ -14,10 +12,7 @@ body{
 .text-sky{color:#dbf9fb;}
 .bg-blue{background:#12699e;}
 .bg-sky{background:#dbf9fb;}
-.main-place{
-    height:100%;
-    overflow-x:hidden;
-}
+.main-place{height:100%;overflow-x:hidden;}
 .h-60px{height: 60px;}
 .h-max{font-size: 5rem;}
 .bg-black-50{background-color:rgba(0,0,0,.5);}
@@ -49,15 +44,10 @@ body{
     border-radius:5px;
     z-index:-1;
 }
-.game-pic{
-    width:100%;
-    padding-bottom:61%;
-}
-.btn-where{
-    bottom: 3%;
-    right: 16.25%;
-}
+.game-pic{width:100%;padding-bottom:61%;}
+.btn-where{bottom: 3%;right: 16.25%;}
 .ph-img{display:none !important;}
+a img:hover{opacity:.8;}
 /* 試玩頁面 */
 .modal-dialog{
     position: absolute;
