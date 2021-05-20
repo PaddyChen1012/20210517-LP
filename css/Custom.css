@@ -16,6 +16,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 .h-60px{height: 60px;}
 .h-max{font-size: 5rem;}
 .bg-black-50{background-color:rgba(0,0,0,.5);}
+.bg-white-50{background-color:rgba(255,255,255,.5);}
 .bg-gold{
     background: rgb(77,45,23);
     background: -moz-linear-gradient(90deg, rgba(77,45,23,1) 0%, rgba(139,90,48,1) 50%, rgba(77,45,23,1) 100%);
