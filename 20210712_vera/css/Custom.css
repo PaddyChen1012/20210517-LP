@@ -21,6 +21,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
     color:#000;
 }
 .flashing{animation: flashing alternate infinite .8s linear}
+.submit-flashing{animation: submit-flashing alternate infinite .8s linear}
 .text-blue{color:#12699e;}
 .text-sky{color:#dbf9fb;}
 .bg-blue{background:#12699e;}
@@ -66,6 +67,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 .img-l{background:url(../images/arrow-l.png)no-repeat center/contain;}
 .img-d{background:url(../images/arrow-d.png)no-repeat center bottom/contain;}
 .hover:hover{-webkit-filter:drop-shadow(0px 0px 15px #ff0);}
+.pc-only{display:block;}
 
 /* 試玩頁面 */
 .modal-dialog{
@@ -128,7 +130,9 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 }
 .poperrorMsg {
     position: absolute;
-    z-index: 20;
+    display: flex;
+    align-items: center;
+    z-index: 0;
     bottom: 52px;
     right: 15px;
     width: auto;
@@ -140,14 +144,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
     -webkit-box-shadow: 0 3px 5px 0 rgb(0 0 0 / 30%);
     box-shadow: 0 3px 5px 0 rgb(0 0 0 / 30%);
 }
-.poperrorMsg:before {
-    content: "";
-    font-family: Glyphicons Halflings;
-    font-weight: 600;
-    margin-right: 5px;
-    top: 1px;
-    position: relative;
-}
+.care-icon{height:20px;}
 .poperrorMsg:after {
     content: "";
     width: 0;
@@ -189,6 +186,22 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#093d93",endColorstr="#093d93",GradientType=1);
     }
 }
+@keyframes submit-flashing {
+    0%{
+        background: rgb(255,241,131);
+        background: -moz-linear-gradient(0deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+        background: linear-gradient(0deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff183",endColorstr="#b47bc2",GradientType=1);
+    }
+    100%{
+        background: rgb(255,241,131);
+        background: -moz-linear-gradient(180deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+        background: linear-gradient(180deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff183",endColorstr="#b47bc2",GradientType=1);
+    }
+}
 
 @media screen and (max-width:500px) {
     .position-ph-relative{position:relative !important;}
@@ -200,4 +213,5 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
     .btn-where{bottom: 1%;right:unset;}
     .h1{font-size:1.25rem;}
     .h3{font-size:.8rem;}
+    .pc-only{display:none;}
 }
