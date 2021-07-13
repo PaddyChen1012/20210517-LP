@@ -70,6 +70,11 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 .pc-only{display:block;}
 
 /* 試玩頁面 */
+.card-body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
 .modal-dialog{
     position: absolute;
     top: 5%;
