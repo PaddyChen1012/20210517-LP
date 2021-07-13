@@ -238,7 +238,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
     .btn-where{bottom: 1%;right:unset;}
     .h1{font-size:1.25rem;}
     .h3{font-size:.8rem;}
-    .h5{font-size:.7rem;}
+    .suceful-page a{font-size:.7rem;}
     .pc-only{display:none;}
     .step{
         height: 140px;
