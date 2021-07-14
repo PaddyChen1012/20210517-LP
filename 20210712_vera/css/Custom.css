@@ -129,7 +129,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
     width: 40%;
     display: block;
     right: 15px;
-    bottom: 0;
+    bottom: 16px;
     height: 50px;
 }
 .poperrorMsg {
@@ -192,7 +192,10 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
     border-width: 70px 0 70px 30px;
     border-color: transparent transparent transparent #fff;
 }
+.main-word{color:#ff37db;text-shadow: 2px 2px 0px #fff,2px 0px 0px #fff,2px -2px 0px #fff,0px -2px 0px #fff,-2px -2px 0px #fff,-2px 0px 0px #fff,-2px 2px 0px #fff,0px 2px 0px #fff;}
+.waring{font-size:.7rem;color:#f00;}
 
+/* 註冊成功頁 */
 .suceful-page{height:calc(100vh - 56px);}
 .break-all{word-break:break-all;}
 .suceful-page .h1{color:#ffef0c;text-shadow: 2px 2px 0px #1119d0,2px 0px 0px #1119d0,2px -2px 0px #1119d0,0px -2px 0px #1119d0,-2px -2px 0px #1119d0,-2px 0px 0px #1119d0,-2px 2px 0px #1119d0,0px 2px 0px #1119d0;}
