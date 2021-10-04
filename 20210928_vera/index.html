@@ -44,48 +44,10 @@
         .ore-warp{background:url(images/crystal.png)no-repeat center/contain;}
         .home-gif{width:25vw;max-width:500px;min-width:300px;}
         .icon{width:20px;height:20px}
-        .title-bg-3::before{
-            content:'';
-            position:absolute;
-            top:60%;
-            left:0;
-            width:20%;
-            padding-bottom:18.8%;
-            background:url(images/treasurebox.png)no-repeat center/contain;
-        }
-        .video{
-            display:grid;
-            grid-template-columns:repeat(2, 1fr);
-            grid-column-gap:0px;
-            grid-row-gap:0px;
-            width:31vw;
-            max-width:680px;
-            min-width:300px;
-            border:4px solid transparent;
-            -moz-border-image:-moz-linear-gradient(top, #9a2bfd 0%, #ff8190 100%);
-            -webkit-border-image:-webkit-linear-gradient(top, #9a2bfd 0%, #ff8190 100%);
-            border-image:linear-gradient(to bottom, #9a2bfd 0%, #ff8190 100%);
-            border-image-slice:1;
-        }
-        .video-box::before{
-            content:'';
-            position:absolute;
-            bottom:0;
-            left:20%;
-            width:15%;
-            height:100%;
-            background:url(images/egg.png)no-repeat bottom/contain, url(images/crystal1.png)no-repeat top/70%;
-            transform:rotateZ(-15deg);
-        }
-        .video-box::after{
-            content:'';
-            position:absolute;
-            top:0;
-            right:10%;
-            width:15%;
-            height:100%;
-            background:url(images/firedragon.png)no-repeat top/contain, url(images/crystal2.png)no-repeat bottom/contain;
-        }
+        .title-bg-3::before{content:'';position:absolute;top:60%;left:0;width:20%;padding-bottom:18.8%;background:url(images/treasurebox.png)no-repeat center/contain;}
+        .video{display:grid;grid-template-columns:repeat(2, 1fr);grid-column-gap:0px;grid-row-gap:0px;width:31vw;max-width:680px;min-width:300px;border:4px solid transparent;-moz-border-image:-moz-linear-gradient(top, #9a2bfd 0%, #ff8190 100%);-webkit-border-image:-webkit-linear-gradient(top, #9a2bfd 0%, #ff8190 100%);border-image:linear-gradient(to bottom, #9a2bfd 0%, #ff8190 100%);border-image-slice:1;}
+        .video-box::before{content:'';position:absolute;bottom:0;left:20%;width:15%;height:100%;background:url(images/egg.png)no-repeat bottom/contain, url(images/crystal1.png)no-repeat top/70%;transform:rotateZ(-15deg);}
+        .video-box::after{content:'';position:absolute;top:0;right:10%;width:15%;height:100%;background:url(images/firedragon.png)no-repeat top/contain, url(images/crystal2.png)no-repeat bottom/contain;}
         .button-1{margin-top:9vw}
         .button-2{margin-bottom:2rem;}
         .button-1 a{background:url(images/button1-1.png)no-repeat center/contain;animation:btn-change1 infinite 2s linear alternate both;z-index:1;}
@@ -106,7 +68,7 @@
         .button-1::before{content:'';position:absolute;bottom:0;left:28.5%;width:40%;max-width:750px;padding-bottom:18.56%;background:url(images/dragon-hatch.png)no-repeat center/contain;}
         .slide {position:relative;width:270px;height:450px;padding:0;margin:auto;}
         .slide ul{position:relative;width:100%;height:100%;padding:0;}
-        .slide li{position:absolute;left:200px;top:0;border-radius:10px;border:3px solid #ff8190;transition:all .8s ease;transform:translateX(-50%);overflow:hidden;}
+        .slide li{position:absolute;left:200px;top:0;border-radius:10px;border:3px solid #ff8190;transition:all .8s ease;transform:translate(-50%,-50%);overflow:hidden;}
         .slide li img{width:100%;}
         .msg-box{max-width:550px;height:76%;border-radius:15px;color:#4dbab5;}
         .ask-img{height:60vh;}

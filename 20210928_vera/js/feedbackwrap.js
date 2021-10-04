@@ -54,35 +54,35 @@ function animate(ele,cssObj,fn){
 var spinArr = [
     {  
         width:60,
-        top:20,
+        top:50,
         left:-30,
         opacity:.1,
         zIndex:2
     },
     {  
         width:80,
-        top:10,
+        top:50,
         left:0,
         opacity:.2,
         zIndex:3
     },
     {   
         width:100,
-        top:0,
+        top:50,
         left:50,
         opacity:1,
         zIndex:4
     },
     {  
         width:80,
-        top:10,
+        top:50,
         left:100,
         opacity:.2,
         zIndex:3
     },
     {   
         width:60,
-        top:20,
+        top:50,
         left:130,
         opacity:.1,
         zIndex:2
