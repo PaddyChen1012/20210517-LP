@@ -92,9 +92,35 @@
             background: url(images/firedragon.png)no-repeat top/contain, url(images/crystal2.png)no-repeat bottom/contain;
         }
         .button-1{margin-top: 5vw}
-        .button-1 a{background: url(images/button1-1.png)no-repeat center/contain;z-index: 1;}
-        .button-2 a{background: url(images/button2-1.png)no-repeat center/contain;color: #9a0cfb;z-index: 1;}
-        .button-3 a{background: url(images/button3-1.png)no-repeat center/contain;color: #9a0cfb;margin-bottom: 4vw;z-index: 1;}
+        .button-2{margin-bottom: 5rem;}
+        .button-1 a{
+            background: url(images/button1-1.png)no-repeat center/contain;
+            animation: btn-change1 infinite 2s linear alternate both;
+            z-index: 1;
+        }
+        .button-2 a{
+            background: url(images/button2-1.png)no-repeat center/contain;
+            animation: btn-change2 infinite 2s linear alternate both;
+            z-index: 1;
+        }
+        .button-3 a{
+            background: url(images/button3-1.png)no-repeat center/contain;
+            animation: btn-change3 infinite 2s linear alternate both;
+            margin-bottom: 4vw;
+            z-index: 1;
+        }
+        @keyframes btn-change1 {
+            0%,49%{background: url(images/button1-1.png)no-repeat center/contain;color: #9a0cfb;text-shadow: 2px 2px 0px #fff,2px 0px 0px #fff,2px -2px 0px #fff,0px -2px 0px #fff,-2px -2px 0px #fff,-2px 0px 0px #fff,-2px 2px 0px #fff,0px 2px 0px #fff;}
+            51%,100%{background: url(images/button1-2.png)no-repeat center/contain;color: #fff;text-shadow: 2px 2px 0px #9a0cfb,2px 0px 0px #9a0cfb,2px -2px 0px #9a0cfb,0px -2px 0px #9a0cfb,-2px -2px 0px #9a0cfb,-2px 0px 0px #9a0cfb,-2px 2px 0px #9a0cfb,0px 2px 0px #9a0cfb;}
+        }
+        @keyframes btn-change2 {
+            0%,49%{background: url(images/button2-1.png)no-repeat center/contain;color: #9a0cfb;text-shadow: 2px 2px 0px #fff,2px 0px 0px #fff,2px -2px 0px #fff,0px -2px 0px #fff,-2px -2px 0px #fff,-2px 0px 0px #fff,-2px 2px 0px #fff,0px 2px 0px #fff;}
+            51%,100%{background: url(images/button2-2.png)no-repeat center/contain;color: #fff;text-shadow: 2px 2px 0px #9a0cfb,2px 0px 0px #9a0cfb,2px -2px 0px #9a0cfb,0px -2px 0px #9a0cfb,-2px -2px 0px #9a0cfb,-2px 0px 0px #9a0cfb,-2px 2px 0px #9a0cfb,0px 2px 0px #9a0cfb;}
+        }
+        @keyframes btn-change3 {
+            0%,49%{background: url(images/button3-1.png)no-repeat center/contain;color: #9a0cfb;text-shadow: 2px 2px 0px #fff,2px 0px 0px #fff,2px -2px 0px #fff,0px -2px 0px #fff,-2px -2px 0px #fff,-2px 0px 0px #fff,-2px 2px 0px #fff,0px 2px 0px #fff;}
+            51%,100%{background: url(images/button3-2.png)no-repeat center/contain;color: #fff;text-shadow: 2px 2px 0px #9a0cfb,2px 0px 0px #9a0cfb,2px -2px 0px #9a0cfb,0px -2px 0px #9a0cfb,-2px -2px 0px #9a0cfb,-2px 0px 0px #9a0cfb,-2px 2px 0px #9a0cfb,0px 2px 0px #9a0cfb;}
+        }
         .button-1::before{
             content: '';
             position: absolute;
@@ -219,11 +245,11 @@
                         </div>
                     </div>
                     <div class="col-12 text-center position-relative d-flex align-items-center justify-content-center button-1">
-                        <a class="px-5 pt-3 pb-4 h4 font-weight-bolder text-white" href="">เล่นตอนนี้</a>
+                        <a class="px-5 pt-3 pb-4 h4 font-weight-bolder" href="">เล่นตอนนี้</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 mt-4">
+            <div class="col-12 mt-4 p-0">
                 <div class="row w-100 mx-auto position-relative">
                     <div class="col-12 col-md-8">
                         <div class="w-100 mx-auto text-center">
@@ -240,16 +266,16 @@
                             <img class="ask-img" src="images/phone3.png" alt="">
                         </div>
                     </div>
-                    <div class="col-5 position-absolute h-100 right d-flex flex-column justify-content-end"><img class="w-100" src="images/queen of bounty.png" alt=""></div>
+                    <div class="col-5 position-absolute h-100 right d-flex d-md-block flex-column justify-content-end"><img class="w-100" src="images/queen of bounty.png" alt=""></div>
                 </div>
                 <div class="col-12 mt-4 text-center p-5 text-white msg-box1">
                     <div class="w-100 h3 m-0 font-weight-bolder">โบนัสมีแจกไม่อั้น</div>
                     <div class="w-100 h3 m-0 font-weight-bolder">รีบคลิกมารับเดี๋ยวนี้</div>
                 </div>
-                <div class="col-12 text-center my-5 position-absolute bottom left d-flex align-items-center justify-content-center button-2">
-                    <a class="mb-4 px-5 pt-3 pb-4 h4 font-weight-bolder" href="">รับโบนัสตอนนี้</a>
+                <div class="col-12 text-center position-absolute bottom left d-flex align-items-center justify-content-center button-2">
+                    <a class="px-5 pt-3 pb-4 h4 font-weight-bolder" href="">รับโบนัสตอนนี้</a>
                 </div>
-                <div class="col-12 mt-4 mb-5 text-center">ที่นี่ยังมีโปรโมชั่นรับโบนัสอีกมากมาย！</div>
+                <div class="col-12 my-5 text-center">ที่นี่ยังมีโปรโมชั่นรับโบนัสอีกมากมาย！</div>
             </div>
             <div class="col-12 px-0">
                 <div class="w-100 text-center position-absolute title-last d-flex align-items-center justify-content-center"><div class="h2 text-white">ทำไมถึงต้องเลือกPAY69Slot</div></div>
