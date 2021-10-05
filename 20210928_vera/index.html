@@ -68,7 +68,7 @@
         .button-1::before{content:'';position:absolute;bottom:0;left:28.5%;width:40%;max-width:750px;padding-bottom:18.56%;background:url(images/dragon-hatch.png)no-repeat center/contain;}
         .slide {position:relative;width:270px;height:450px;padding:0;margin:auto;}
         .slide ul{position:relative;width:100%;height:100%;padding:0;}
-        .slide li{position:absolute;left:200px;top:0;border-radius:10px;border:3px solid #ff8190;transition:all .8s ease;transform:translate(-50%,-50%);overflow:hidden;}
+        .slide li{position:absolute;left:50%;top:50%;border-radius:10px;border:3px solid #ff8190;transition:all .8s ease;transform:translate(-50%,-50%);overflow:hidden;}
         .slide li img{width:100%;}
         .msg-box{max-width:550px;height:76%;border-radius:15px;color:#4dbab5;}
         .ask-img{height:60vh;}
@@ -82,8 +82,8 @@
         .kanban-box{padding:1vw 0 5vw;}
         .kanban-msg{padding:1rem 1vw;}
         .kanban-img{max-width:180px;}
-        footer{background:url(images/bottom.png)no-repeat center/contain;height:22.13vw;}
-        .footer-wd{background-color:#000;}
+        footer{background:url(images/bottom.png)no-repeat center/contain;height:21.9vw;}
+        .footer-wd{background-color:rgba(0,0,0,.6);}
         @media screen and (max-width:500px){
             .ph-none{display:none;}
             .title-bg-1{background-size:cover;}
@@ -110,13 +110,16 @@
 <body>
     <div class="container-fluid p-0 bg">
         <div class="row w-100 mx-auto position-relative">
+            <!-- page_1 start -->
             <div class="page1 position-relative w-100 overflow-hidden">
+                <!-- momey start -->
                 <img class="position-absolute money1" src="images/chip1.png" alt="money">
                 <img class="position-absolute money2" src="images/chip2.png" alt="money">
                 <img class="position-absolute money3" src="images/chip3.png" alt="money">
                 <img class="position-absolute money4 ph-none" src="images/chip4.png" alt="money">
                 <img class="position-absolute money5 ph-none" src="images/chip3.png" alt="money">
                 <img class="position-absolute money6 ph-none" src="images/chip2.png" alt="money">
+                <!-- momey end -->
                 <div class="col-12 text-center p-2"><img class="title-logo" src="images/pay69.png" alt=""></div>
                 <div class="col-12 text-center py-2 my-3 title-bg-1 h3 text-white d-flex align-items-center justify-content-center">
                     <img class="icon mx-2" src="images/diamond-icon.png" alt="">
@@ -140,7 +143,7 @@
                     แจ็คพอตแตกทุกวัน ผู้เล่นรับโบนัสทุกวัน
                     <img class="icon mx-2" src="images/gift-icon.png" alt="">
                 </div>
-                <!-- 輪播 -->
+                <!-- feedbackwrap start -->
                 <div class="row w-100 mx-auto justify-content-center flex-wrap">
                     <div class="feedbackwrap w-100">
                         <div class="wrap" id="wrap">
@@ -156,7 +159,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- feedbackwrap end -->
             </div>
+            <!-- page_1 end -->
+            <!-- page_2 start -->
             <div class="col-12 page2 px-0">
                 <div class="row w-100 mx-auto">
                     <div class="col-12 text-center py-2 my-3 title-bg-3 h3 text-white d-flex align-items-center justify-content-center">
@@ -177,6 +183,8 @@
                     </div>
                 </div>
             </div>
+            <!-- page_2 end -->
+            <!-- page_3 start -->
             <div class="col-12 mt-4 p-0">
                 <div class="row w-100 mx-auto position-relative">
                     <div class="col-12 col-md-8">
@@ -189,12 +197,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="ask-img" src="images/phone1.png" alt="">
-                            <img class="ask-img" src="images/phone2.png" alt="">
-                            <img class="ask-img" src="images/phone3.png" alt="">
+                            <img class="ask-img" src="images/phone1.png" alt="sever_talk">
+                            <img class="ask-img" src="images/phone2.png" alt="sever_talk">
+                            <img class="ask-img" src="images/phone3.png" alt="sever_talk">
                         </div>
                     </div>
-                    <div class="col-5 position-absolute h-100 right d-flex d-md-block flex-column justify-content-end"><img class="w-100" src="images/queen of bounty.png" alt=""></div>
+                    <div class="col-5 position-absolute h-100 right d-flex d-md-block flex-column justify-content-end"><img class="w-100" src="images/queen-of-bounty.png" alt=""></div>
                 </div>
                 <div class="col-12 mt-4 text-center p-5 text-white msg-box1">
                     <div class="w-100 h3 m-0 font-weight-bolder">โบนัสมีแจกไม่อั้น</div>
@@ -205,6 +213,8 @@
                 </div>
                 <div class="col-12 mt-5 text-center">ที่นี่ยังมีโปรโมชั่นรับโบนัสอีกมากมาย！</div>
             </div>
+            <!-- page_3 end -->
+            <!-- page_4 start -->
             <div class="col-12 mt-3 px-0">
                 <div class="w-100 text-center position-absolute title-last d-flex align-items-center justify-content-center"><div class="h2 text-white">ทำไมถึงต้องเลือกPAY69Slot</div></div>
                 <div class="row w-75 mx-auto position-relative text-light kanban">
@@ -226,12 +236,15 @@
                     </div>
                 </div>
             </div>
+            <!-- page_4 end -->
+            <!-- footer start -->
             <footer class="col-12 text-light text-center position-absolute bottom d-flex align-items-end justify-content-center pb-2">
                 <div class="col-12 text-center d-flex flex-column align-items-center justify-content-center button-3">
                     <a class="px-5 pt-3 pb-4 h4 font-weight-bolder" href="">รับโบนัสตอนนี้</a>
                     <div class="px-4 py-2 rounded-pill footer-wd">Copyright © Pay69 . All rights reserved</div>
                 </div>
             </footer>
+            <!-- footer end -->
         </div>
     </div>
 

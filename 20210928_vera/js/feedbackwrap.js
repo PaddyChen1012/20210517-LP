@@ -32,8 +32,6 @@ function animate(ele,cssObj,fn){
                 ele.style.filter = "alpha(opacity="+cssObj[k]+")";
             }else if(k === "zIndex"){
                 ele.style.zIndex = cssObj[k];
-            }else if(k === "top"){
-                ele.style.top = cssObj[k] + "%";
             }else{
                 ele.style[k] = cssObj[k] + "%";
             }
@@ -54,35 +52,30 @@ function animate(ele,cssObj,fn){
 var spinArr = [
     {  
         width:60,
-        top:50,
         left:-30,
         opacity:.1,
         zIndex:2
     },
     {  
         width:80,
-        top:50,
         left:0,
         opacity:.2,
         zIndex:3
     },
     {   
         width:100,
-        top:50,
         left:50,
         opacity:1,
         zIndex:4
     },
     {  
         width:80,
-        top:50,
         left:100,
         opacity:.2,
         zIndex:3
     },
     {   
         width:60,
-        top:50,
         left:130,
         opacity:.1,
         zIndex:2
