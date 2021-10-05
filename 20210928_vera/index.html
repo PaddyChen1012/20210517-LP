@@ -26,20 +26,12 @@
         .money4{left:86%;}
         .money5{left:28%;}
         .money6{left:52%;}
-        .money1,.money6{width:80px;animation:comedown1 infinite 2s linear;z-index:10;}
-        .money2,.money4{width:50px;animation:comedown2 infinite 1.5s linear;z-index:10;}
-        .money3,.money5{width:100px;animation:comedown3 infinite 2.7s linear;z-index:10;}
-        @keyframes comedown1 {
+        .money1,.money6{width:80px;animation:comedown infinite 2s linear;z-index:10;}
+        .money2,.money4{width:50px;animation:comedown infinite 1.5s linear;z-index:10;}
+        .money3,.money5{width:100px;animation:comedown infinite 2.7s linear;z-index:10;}
+        @keyframes comedown {
             0%{top:0%;transform:rotate3d(1,1,1,0deg);}
             100%{top:100%;transform:rotate3d(1,1,1,730deg);}
-        }
-        @keyframes comedown2 {
-            0%{top:0%;transform:rotate3d(1,1,1,0deg);}
-            100%{top:100%;transform:rotate3d(1,1,1,720deg);}
-        }
-        @keyframes comedown3 {
-            0%{top:0%;transform:rotate3d(1,1,1,0deg);}
-            100%{top:100%;transform:rotate3d(1,1,1,720deg);}
         }
         .ore-warp{background:url(images/crystal.png)no-repeat center/contain;}
         .home-gif{width:25vw;max-width:500px;min-width:300px;}
@@ -95,8 +87,8 @@
             .ask-img:nth-child(3){animation-delay:3s;}
             @keyframes opacity {
                 0%,33%{opacity:0;}
-                34%,65%{opacity:1;}
-                66%,100%{opacity:0;}
+                34%,66%{opacity:1;}
+                67%,100%{opacity:0;}
             }
             .msg-box .h3{font-size:1.25rem;}
             .msg-box1{margin:0 !important;}
