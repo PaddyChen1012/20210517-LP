@@ -10,30 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;500&display=swap" rel="stylesheet">
     <style>
-        *{
-            padding:0;
-            margin:0;
-            box-sizing:border-box;
-            font-family:'Mitr', sans-serif;
-        }
+        *{padding:0;margin:0;box-sizing:border-box;font-family:'Mitr', sans-serif;}
         .ph-only{display:none;}
-        body{background-color:#ff6a6c;overflow-x:hidden;}
-        .container-fluid{
-            position:relative;
-            display:flex;
-            flex-direction:column;
-            justify-content:space-between;
-            padding:16px 16px 0;
-            width:100vw;
-            height:48.8vw;
-        }
-        .bg{background:url(images/940x517\ BG.jpg)no-repeat top right/cover;}
-        .grid{
-            display:grid; 
-            grid-template-columns:repeat(10, 1fr); 
-            grid-column-gap:10px; 
-            grid-row-gap:16px;
-        }
+        .pc-only{display:block;}
+        body{background-color;}
+        .bg{background: linear-gradient(180deg,#9a3fff 0%,#3afdff 100%);}
+        .grid{display:grid; grid-template-columns:repeat(10, 1fr); grid-column-gap:10px; grid-row-gap:16px;}
         .title{
             background-color:#000;
             border-radius:50px;
@@ -42,18 +24,29 @@
             font-size:3rem;
             padding:8px;
             text-align:center;
+        }.title::before,.title::after{
+            content: '';
+            position: absolute;
+            width: 88px;
+            height: 88px;
         }
-        .logo{
-            flex:30%;
-            text-align:end;
+        .title::before{
+            top: -10px;
+            left: -44px;
+            background: url(images/bikini-paradise_h_cocktail.png)no-repeat center/contain;
         }
+        .title::after{
+            bottom: -20px;
+            right: -30px;
+            background: url(images/bikini-paradise_h_starfish.png)no-repeat center/contain;
+        }
+        .logo{flex:30%;text-align:end;}
         .logo-img{height:72px;}
         .msg-box{
             flex:55%;
             max-width:55%;
             display:grid; 
             grid-template-columns:1fr;
-            grid-row-gap:16px;
             -webkit-filter:drop-shadow(0px 0px 10px #000);
         }
         .li{
@@ -81,19 +74,13 @@
             margin-right:8px;
         }
         .li:nth-child(2n):before{background-color:#ffc01e;}
-        .li.red:before{
-            content:'X';
-            background-color:unset;
-            border:unset;
-            font-size:1rem;
-        }
+        .li.red:before{content:'X';background-color:unset;border:unset;font-size:1rem;}
         .line-box{
-            flex:20%;
-            max-width:20%;
+            flex: 45%;
+            max-width: 45%;
             display:flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:space-around;
+            align-items: end;
+            justify-content: start;
             -webkit-filter:drop-shadow(0px 0px 8px #000);
         }
         .line-id{
@@ -103,115 +90,135 @@
             font-size:2rem;
             padding:4px 32px;
         }
-        .grid-footer{
-            display:grid;
-            grid-template-columns:repeat(6, 1fr);
-            grid-template-rows:repeat(12, 1fr);
-            grid-column-gap:10px;
-            height:100%;
+        .line-id::before{
+            content: '';
+            position: absolute;
+            bottom: -25%;
+            left: -35%;
+            width: 50%;
+            padding-bottom: 57%;
+            background: url(images/bikini-paradise_h_surfboard.png)no-repeat center/contain;
+            z-index: -1;
         }
-        .grid-footer>div{
-            position:relative;
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:space-around;
-            background:rgb(255,253,190);
-            background:-moz-linear-gradient(90deg, rgba(255,253,190,1) 0%, rgba(255,192,30,1) 100%);
-            background:-webkit-linear-gradient(90deg, rgba(255,253,190,1) 0%, rgba(255,192,30,1) 100%);
-            background:linear-gradient(90deg, rgba(255,253,190,1) 0%, rgba(255,192,30,1) 100%);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffdbe",endColorstr="#ffc01e",GradientType=1);
-            background-size:600%;
-            border-radius:40px 40px 0 0;
-            color:#fff;
-            padding:16px 32px;
+        .line-id::after{
+            content: '';
+            position: absolute;
+            bottom: -100%;
+            right: -40%;
+            width: 50%;
+            padding-bottom: 40%;
+            background: url(images/bikini-paradise_h_sunglasses.png)no-repeat center/contain;
         }
-        .grid-footer>div:hover{-webkit-filter:drop-shadow(0px 0px 15px #7338d2);}
-        .grid-footer>div:nth-child(1){grid-row:6/13;background-position:0% center;}
-        .grid-footer>div:nth-child(2){grid-row:5/13;background-position:16% center;}
-        .grid-footer>div:nth-child(3){grid-row:4/13;background-position:32% center;}
-        .grid-footer>div:nth-child(4){grid-row:3/13;background-position:48% center;}
-        .grid-footer>div:nth-child(5){grid-row:2/13;background-position:64% center;}
-        .grid-footer>div:nth-child(6){grid-row:1/13;background-position:80% center;}
-        .grid-footer>div:before{
-            position:absolute;
-            top:-20px;
-            left:calc(50% - 80px);
-            width:160px;
-            height:40px;
-            background:rgb(115,56,210);
-            background:-moz-linear-gradient(0deg, rgba(115,56,210,1) 0%, rgba(84,75,237,1) 100%);
-            background:-webkit-linear-gradient(0deg, rgba(115,56,210,1) 0%, rgba(84,75,237,1) 100%);
-            background:linear-gradient(0deg, rgba(115,56,210,1) 0%, rgba(84,75,237,1) 100%);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#7338d2",endColorstr="#544bed",GradientType=1);
-            border-radius:20px;
-            color:#fff;
-            font-size:1.75rem;
-            line-height:40px;
-            text-align:center;
+        .main-bg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            -webkit-filter:drop-shadow(5px 5px 0px #fff);
         }
-        .grid-footer>div:nth-child(1):before{content:'1 - 29ยูส';}
-        .grid-footer>div:nth-child(2):before{content:'30 ยูส';}
-        .grid-footer>div:nth-child(3):before{content:'50 ยูส';}
-        .grid-footer>div:nth-child(4):before{content:'100 ยูส';}
-        .grid-footer>div:nth-child(5):before{content:'250 ยูส';}
-        .grid-footer>div:nth-child(6):before{content:'500 ยูส';}
-        .grid-footer>div>div{
-            font-size:1.75rem;
-            text-shadow:0px 3px 0px #000,2px 2px 0px #000,3px 0px 0px #000,2px -2px 0px #000,0px -3px 0px #000,-2px -2px 0px #000,-3px 0px 0px #000,-2px 2px 0px #000;
+        .circle{
+            bottom: 20%;
+            right: 5%;
+            width: 200px;
+            height: 0;
+            padding-bottom: 200px;
+            border-radius: 50%;
+            background: linear-gradient(-45deg,#6a59cc 10%,#3afdff 90%);
         }
+        .circle:nth-child(1){
+            top: 20%;
+            right: 20%;
+            width: 40%;
+            padding-bottom: 40%;
+            z-index: -1;
+            background: linear-gradient(-90deg,#6a59cc 10%,#3afdff 90%);
+        }
+        .circle:nth-child(5){
+            bottom: 40%;
+            right: 0%;
+            width: 80px;
+            padding-bottom: 80px;
+        }
+        .circle:nth-child(6){
+            top: 20%;
+            left: 5%;
+            width: 150px;
+            padding-bottom: 150px;
+        }
+        .circle:nth-child(7){
+            top: 15%;
+            left: 15%;
+            width: 50px;
+            padding-bottom: 50px;
+        }
+        .footer>div:nth-child(2)::before{
+            content: '';
+            position: absolute;
+            top: -15%;
+            left: -60%;
+            width: 150%;
+            padding-bottom: 150%;
+            background: url(images/bubble.png)no-repeat center/contain;
+        }
+        .footer>div:nth-child(2)::after{
+            content: '';
+            position: absolute;
+            bottom: -15%;
+            right: -30%;
+            width: 60%;
+            padding-bottom: 60%;
+            background: url(images/bubble2.png)no-repeat center/contain;
+            z-index: 1;
+        }
+        .footer>div:nth-child(6)::before{
+            content: '';
+            position: absolute;
+            top: 5%;
+            left: -50%;
+            width: 100%;
+            padding-bottom: 100%;
+            background: url(images/bubble.png)no-repeat center/contain;
+        }
+        .other{padding: 1% 0 !important;}
         .num{color:#fe3e65;}
         @media screen and (max-width:768px) {
             .ph-only{display:inline-block;}
+            .pc-only{display:none;}
             .container-fluid{height:auto;padding:16px;}
             .logo{display:none;}
-            .logo,
-            .title,
-            .msg-box,
-            .line-box{
-                flex:100%;
-                max-width:100%;
-            }
+            .logo,.title,.msg-box,.line-box{flex:100%;max-width:100%;}
             .title{font-size:1.75rem;}
             .li{font-size:1rem;}
             .line-box>img{display:none;}
-            .grid-footer{
-                grid-template-columns:1fr 1fr;
-                grid-template-rows:unset;
-                grid-row-gap:10px;
-                height:100%;
-            }
-            .grid-footer>div {
-                grid-column:unset !important;
-                border-radius:40px;
-            }
-            .grid-footer>div:nth-child(1){grid-row:unset;}
-            .grid-footer>div:nth-child(2){grid-row:unset;}
-            .grid-footer>div:nth-child(3){grid-row:unset;}
-            .grid-footer>div:nth-child(4){grid-row:unset;}
-            .grid-footer>div:nth-child(5){grid-row:unset;}
-            .grid-footer>div:nth-child(6){grid-row:unset;}
-            .grid-footer>div:before{
-                position:relative;
-                top:unset;
-                left:unset;
-            }
-            .grid-footer>div>div {
-                font-size:1rem;
-                text-shadow:0px 1px 0px #000,1px 1px 0px #000,1px 0px 0px #000,1px -1px 0px #000,0px -1px 0px #000,-1px -1px 0px #000,-1px 0px 0px #000,-1px 1px 0px #000;
-            }
         }
         @media screen and (max-width:500px) {
-            .bg{background-attachment:fixed;}
-            .grid-footer{grid-template-columns:1fr;}
+            .title::before{display: none;}
+            .title::after{width: 66px;height: 66px;}
+            .msg-box{background: url(images/girl.png)no-repeat bottom right/cover;}
+            .line-box{justify-content: center;}
+            .line-id{font-size: 1.5rem;}
+            .line-id::before{display: none;}
+            .line-id::after{right: 0;width: 25%;padding-bottom: 25%;}
+            .recommed{position: absolute;top: -10%;width: 50% !important;}
+            .footer div{padding: 8% 0 !important;}
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid bg">
-        <div class="row w-100 mx-auto">
+    <div class="container-fluid p-0 position-relative overflow-hidden bg">
+        <div class="position-absolute main-bg p-3">
+            <div class="position-absolute circle pc-only"></div>
+            <img class="w-100 pc-only" src="images/bg.png" alt="">
+            <img class="position-absolute w-100 pc-only" src="images/girl.png" alt="">
+            <div class="position-absolute circle pc-only"></div>
+            <div class="position-absolute circle pc-only"></div>
+            <div class="position-absolute circle pc-only"></div>
+            <div class="position-absolute circle pc-only"></div>
+        </div>
+        <div class="row w-100 mx-auto position-relative p-3">
             <div class="logo"></div>
-            <div class="title"><img class="logo-img ph-only" src="images/pay69_circle.png" alt="">รับการตลาดนอก</div>
+            <div class="title position-relative"><img class="logo-img ph-only" src="images/pay69_circle.png" alt="">รับการตลาดนอก</div>
             <div class="logo"><img class="logo-img" src="images/pay69.png" alt=""></div>
             <div class="msg-box mt-3">
                 <div class="li">ชวนเพื่อนวันละ 1 คน การันตี 30 วันได้รับ 7,000</div>
@@ -224,43 +231,30 @@
                 <div class="li red">ห้ามโกงหรือหลอกลูกค้า</div>
             </div>
             <div class="line-box mt-3">
-                <img class="w-50" src="images/line.png" alt="">
-                <div class="line-id text-center">LINE ID :88c05ka</div>
+                <!-- <img class="w-50" src="images/line.png" alt=""> -->
+                <div class="position-relative line-id text-center">LINE ID :88c05ka</div>
             </div>
         </div>
-        <div class="grid-footer mt-3">
-            <div>
-                <div>ได้ยูสละ <span class="num">100</span></div>
+        <div class="position-relative row w-100 mx-auto footer p-3">
+            <div class="position-relative col-12 col-md-2 p-0 d-flex flex-column justify-content-end other">
+                <img class="w-100" src="images/1-29.png" alt="">
             </div>
-            <div>
-                <div>ได้ยูสละ <span class="num">100</span></div>
-                <div>บนัสเพิ่ม <span class="num">1,000</span></div>
-                <div>งินเดือน <span class="num">3,000</span></div>
-                <div>วม <span class="num">7,000</span></div>
+            <div class="position-relative col-12 col-md-2 p-0 d-flex flex-column align-items-start justify-content-end">
+                <img class="w-100 recommed" src="images/recommend.png" alt="">
+                <img class="w-100" src="images/30.png" alt="">
             </div>
-            <div>
-                <div>ได้ยูสละ <span class="num">150</span></div>
-                <div>บนัสเพิ่ม <span class="num">1,500</span></div>
-                <div>งินเดือน <span class="num">3,000</span></div>
-                <div>วม <span class="num">12,000</span></div>
+            <div class="position-relative col-12 col-md-2 p-0 d-flex flex-column justify-content-end other">
+                <img class="w-100" src="images/50.png" alt="">
             </div>
-            <div>
-                <div>ได้ยูสละ <span class="num">200</span></div>
-                <div>บนัสเพิ่ม <span class="num">3,000</span></div>
-                <div>งินเดือน <span class="num">3,000</span></div>
-                <div>วม <span class="num">26,000</span></div>
+            <div class="position-relative col-12 col-md-2 p-0 d-flex flex-column justify-content-end other">
+                <img class="w-100" src="images/100.png" alt="">
             </div>
-            <div>
-                <div>ได้ยูสละ <span class="num">250</span></div>
-                <div>บนัสเพิ่ม <span class="num">5,000</span></div>
-                <div>งินเดือน <span class="num">3,000</span></div>
-                <div>วม <span class="num">58,000</span></div>
+            <div class="position-relative col-12 col-md-2 p-0 d-flex flex-column justify-content-end other">
+                <img class="w-100" src="images/250.png" alt="">
             </div>
-            <div>
-                <div>ได้ยูสละ <span class="num">300</span></div>
-                <div>บนัสเพิ่ม <span class="num">10,000</span></div>
-                <div>งินเดือน <span class="num">3,000</span></div>
-                <div>วม <span class="num">163,000</span></div>
+            <div class="position-relative col-12 col-md-2 p-0 d-flex flex-column align-items-end justify-content-end">
+                <img class="w-100 recommed" src="images/big-prize.png" alt="">
+                <img class="w-100" src="images/500.png" alt="">
             </div>
         </div>
     </div>
@@ -268,5 +262,42 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 </html>
