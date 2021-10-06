@@ -339,7 +339,6 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
         border-color: #fff transparent transparent transparent;
     
     }
-    .bg-blue-pouple>div:nth-child(1){margin-bottom: 0 !important;}
     .footer {padding: 0% 3rem;}
     .recommed{position:absolute;top:-10%;width:50% !important;}
     .footer div{padding: 8% 0 !important;}
