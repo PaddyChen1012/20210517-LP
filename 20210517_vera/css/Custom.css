@@ -70,7 +70,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 .btn-2{left:50%;transform:translateX(-50%);}
 .pc-only{display:block;}
 
-/* 試玩頁面 */
+/* Demo Game */
 .card-body{
     display:flex;
     flex-direction:column;
@@ -86,7 +86,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
     margin: 0;
 }
 
-/* 註冊頁 */
+/* registered */
 .bg-box{
     top:0;
     background:linear-gradient(180deg,rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%,rgba(23,199,255,1) 100%) ,url(../images/BG-2.jfif) no-repeat center/cover;
@@ -197,7 +197,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 .main-word{color:#ff37db;text-shadow: 2px 2px 0px #fff,2px 0px 0px #fff,2px -2px 0px #fff,0px -2px 0px #fff,-2px -2px 0px #fff,-2px 0px 0px #fff,-2px 2px 0px #fff,0px 2px 0px #fff;}
 .waring{font-size:.7rem;color:#f00;}
 
-/* 註冊成功頁 */
+/* suceful */
 .suceful-page{height:calc(100vh - 56px);}
 .break-all{word-break:break-all;}
 .suceful-page .h1{color:#ffef0c;text-shadow: 2px 2px 0px #1119d0,2px 0px 0px #1119d0,2px -2px 0px #1119d0,0px -2px 0px #1119d0,-2px -2px 0px #1119d0,-2px 0px 0px #1119d0,-2px 2px 0px #1119d0,0px 2px 0px #1119d0;}
@@ -293,6 +293,21 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
     background:url(../images/bubble.png)no-repeat center/contain;
 }
 .other{padding:1% 0 !important;}
+.line::after{
+    content: '|';
+    margin: 0 4px;
+}
+
+/* News */
+.divider-page::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: rgba(200,200,200,1);
+}
 
 @keyframes flashing {
     0%{
