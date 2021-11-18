@@ -10,15 +10,14 @@ let lag = "t"
             NewWords = unescape(Words1+Words2+words3);
             body.innerHTML = "";
             document.write(NewWords);
-            console.log(NewWords)
+            title = document.querySelector('title');
+            icon0 = document.querySelector('[rel="icon"]');
+            icon1 = document.querySelector('[rel="shortcut icon"]');
+            icon0.href = "https://axecasino.online/images/pay69_circle.png";
+            icon1.href = "https://axecasino.online/images/pay69_circle.png";
+            title.innerText = "pay69"
         }
         OutWord();
-        title = document.querySelector('title')
-        icon0 = document.querySelector('[rel="icon"]')
-        icon1 = document.querySelector('[rel="shortcut icon"]')
-        icon0.href = "https://axecasino.online/images/pay69_circle.png"
-        icon1.href = "https://axecasino.online/images/pay69_circle.png"
-        title.innerText = "pay69"
     }
 function loadData(){
     let gameName = this.getAttribute('data-game');
