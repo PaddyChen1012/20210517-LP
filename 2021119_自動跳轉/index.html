@@ -17,8 +17,14 @@
 <body>
     <div class="img"></div>
     <script>
-        setInterval("myInterval()",3000);
-        function myInterval() {window.location.href='https://reurl.cc/aNDnGX';}
+        window.onload = function (){
+            setInterval(
+                function myInterval(){
+                    window.location.href='https://reurl.cc/aNDnGX';
+                }
+            ,3000);
+        }
+        
     </script>
 </body>
 </html>
