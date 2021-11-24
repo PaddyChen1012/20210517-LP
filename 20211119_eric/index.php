@@ -1,3 +1,7 @@
+<?php
+$country =  $_SERVER['HTTP_CF_IPCOUNTRY'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +42,7 @@
     </style>
 </head>
 <body>
-    <div class="container main-place p-0">
+<div class="container main-place p-0">
         <div class="row w-100 mx-auto">
             <div class="col-8 mx-auto p-3">
                 <div class="h1 font-weight-bold">มาแน่ปลาย พ.ย. "วัคซีนโมเดอร์นา" อีก 1.4 ล้านโดส หลังอนุมัติแหล่งผลิตเพิ่ม</div>
@@ -76,7 +80,10 @@
             </div>
         </div>
     </div>
-
+    <script>
+    var country ='<?=  $country  ?>';
+        console.log(country );
+    </script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/myJS.js"></script>

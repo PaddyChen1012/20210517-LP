@@ -1,3 +1,7 @@
+<?php
+$country =  $_SERVER['HTTP_CF_IPCOUNTRY'];
+
+?>
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -16,14 +20,10 @@
 </head>
 <body>
     <div class="img"></div>
+    <script src="myJs.js"></script>
     <script>
-        window.onload = function (){
-            setInterval(
-                function myInterval(){
-                    window.location.href='https://reurl.cc/aNDnGX';
-                }
-            ,3000);
-        }
+        var country ='<?=  $country  ?>';
+            console.log(country);
     </script>
 </body>
 </html>
