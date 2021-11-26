@@ -6,4 +6,6 @@ if (country = "TH"){
             }
         ,3000);
     }
+}else{
+    return
 }

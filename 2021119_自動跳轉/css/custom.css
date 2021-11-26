@@ -1,0 +1,21 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.img{
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/pic20211119.jpg) no-repeat center/cover;
+}
+.img1{
+    width: 100vw;
+    height: 100vh;
+    background: url(https://play-lh.googleusercontent.com/WCvur5bUEx_0mCDglYg_RGY7ZmJIUwmGn-Lr7SrrrRZRB9uhVVi1yuyB3kYWG99GYn1O=w720-h310-rw) no-repeat center/cover;
+}
+.img2{
+    width: 100vw;
+    height: 100vh;
+    background: url(https://play-lh.googleusercontent.com/BecjSFFMoUaJcaCjWM8MXexNjran3qju9_tMCkTe2VVC9qoZvXVBtzDjEPc7CQOM5A=w720-h310-rw) no-repeat center/cover;
+}
+.img3{
+    width: 100vw;
+    height: 100vh;
+    background: url(https://play-lh.googleusercontent.com/lRqSL_pTs0alFnQx7V9r6KcwDPgx95x-RdSNbE6bYrwYag8Rt-XlbmjpKf0SZEDGPA=w720-h310-rw) no-repeat center/cover;
+}
