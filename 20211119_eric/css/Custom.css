@@ -1,7 +1,111 @@
-body{font-family: Sarabun, sans-serif !important;}
+body{width:100vw;height:100vh;overflow-x:hidden;font-family: Sarabun, sans-serif !important;}
+.vh-100{height:100vh;}
+.t-0{top:0}
+.b-0{bottom:0;}
+.l-0{left:0;}
+.r-0{right:0;}
+.lh{line-height:1.5rem;}
+.z-0{z-index:0;}
+.z-1{z-index:1;}
+.h6{font-size:1rem;}
+.title{height:60px;}
+.title-word{vertical-align: middle;}
+.btn-c{
+    background: rgb(251,183,38);
+    background: -moz-linear-gradient(0deg, rgba(251,183,38,1) 0%, rgba(255,255,0,1) 70%, rgba(251,183,38,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(251,183,38,1) 0%, rgba(255,255,0,1) 70%, rgba(251,183,38,1) 100%);
+    background: linear-gradient(0deg, rgba(251,183,38,1) 0%, rgba(255,255,0,1) 70%, rgba(251,183,38,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbb726",endColorstr="#fbb726",GradientType=1);
+    border-radius:15px;
+    box-shadow:3px 3px 0px #000,0px 0px 10px #000 inset;
+    color:#000;
+}
+.flashing{animation: flashing alternate infinite .8s linear}
+.text-blue{color:#12699e;}
+.text-sky{color:#dbf9fb;}
+.bg-blue{background:#12699e;}
+.bg-blue-pouple{background:linear-gradient(180deg,#9a3fff 0%,#3afdff 100%);}
+.bg-sky{background:#dbf9fb;}
+.h-60px{height: 60px;}
+.h-max{font-size: 5rem;}
+.bg-black-50{background-color:rgba(0,0,0,.5);}
+.bg-white-50{background-color:rgba(255,255,255,.5);}
+.bg-gold{
+    background: rgb(77,45,23);
+    background: -moz-linear-gradient(90deg, rgba(77,45,23,1) 0%, rgba(139,90,48,1) 50%, rgba(77,45,23,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(77,45,23,1) 0%, rgba(139,90,48,1) 50%, rgba(77,45,23,1) 100%);
+    background: linear-gradient(90deg, rgba(77,45,23,1) 0%, rgba(139,90,48,1) 50%, rgba(77,45,23,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d2d17",endColorstr="#4d2d17",GradientType=1);
+    border:0;
+    border-radius:5px;
+    color:rgba(255,255,255,.8);
+}
+.bg-gold:before{
+    content:'';
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    top:-2px;
+    bottom:-2px;
+    left:-2px;
+    right:-2px;
+    background: rgb(164,134,90);
+    background: -moz-linear-gradient(90deg,rgba(164,134,90,1) 0%,rgba(228,223,216,1) 50%,rgba(182,147,95,1) 75%,rgba(228,223,216,1) 100%);
+    background: -webkit-linear-gradient(90deg,rgba(164,134,90,1) 0%,rgba(228,223,216,1) 50%,rgba(182,147,95,1) 75%,rgba(228,223,216,1) 100%);
+    background: linear-gradient(90deg,rgba(164,134,90,1) 0%,rgba(228,223,216,1) 50%,rgba(182,147,95,1) 75%,rgba(228,223,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a4865a",endColorstr="#a4865a",GradientType=1);
+    border-radius:5px;
+    z-index:-1;
+}
+.game-pic{width:100%;padding-bottom:61%;}
+.btn-where{bottom: 3%;right: 16.25%;}
+.ph-img{display:none !important;}
+.service-icon{width:180px;height:180px;border:4px solid #12699e;}
+.warp-box{padding-bottom:74.2%;}
+.img-r{background:url(../images/arrow-r.png)no-repeat center/contain;}
+.img-l{background:url(../images/arrow-l.png)no-repeat center/contain;}
+.img-d{background:url(../images/arrow-d.png)no-repeat center bottom/contain;}
+.hover:hover{-webkit-filter:drop-shadow(0px 0px 15px #ff0);}
+.btn-2{left:50%;transform:translateX(-50%);}
+.pc-only{display:block;}
+
+/* Try */
+.card-body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.modal-dialog{
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    max-width: none;
+    margin: 0;
+}
+@keyframes flashing {
+    0%{
+        background: rgb(251,38,38);
+        background: -moz-linear-gradient(0deg, rgba(251,38,38,1) 0%, rgba(255,110,0,1) 70%, rgba(251,38,38,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(251,38,38,1) 0%, rgba(255,110,0,1) 70%, rgba(251,38,38,1) 100%);
+        background: linear-gradient(0deg, rgba(251,38,38,1) 0%, rgba(255,110,0,1) 70%, rgba(251,38,38,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb2626",endColorstr="#fb2626",GradientType=1);
+    }
+    100%{
+        background: rgb(9,61,147);
+        background: -moz-linear-gradient(0deg, rgba(9,61,147,1) 0%, rgba(72,191,233,1) 70%, rgba(9,61,147,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(9,61,147,1) 0%, rgba(72,191,233,1) 70%, rgba(9,61,147,1) 100%);
+        background: linear-gradient(0deg, rgba(9,61,147,1) 0%, rgba(72,191,233,1) 70%, rgba(9,61,147,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#093d93",endColorstr="#093d93",GradientType=1);
+    }
+}
+
+
 header{z-index: 1;}
 .main{width: 100%;overflow-x: hidden;}
-.main-place{margin-top: 60px;}
+.main .main-place{margin-top: 60px;}
 .news{
     background-color: #000;
     border-bottom: 3px solid #f00;
@@ -39,8 +143,37 @@ header{z-index: 1;}
     .news-list{top: -500%;right: 0;}
     .news-list.show {top: 100%;width: 100%!important;}
 }
+@media screen and (max-width:768px) {
+    .pc-only{display:none;}
+}
 @media screen and (max-width:500px) {
-    .h1{font-size: 1.5rem;}
+    .position-ph-relative{position:relative !important;}
+    .title-word{display:none !important;}
+    .pc-none{display:none !important;}
+    .ph-bclock{display:block !important;}
+    .ph-arrow{width:100% !important;height:40px;background:url(../images/arrow-d.png)no-repeat center center/contain;}
+    .warp-box{padding-bottom:0;}
+    .btn-where{bottom: 1%;right:unset;}
+    .h1{font-size:1.25rem;}
+    .h3{font-size:.8rem;}
+    .suceful-page a{font-size:.7rem;}
+    .step{
+        height: 140px;
+        background: rgb(55, 61, 63);
+        background: -moz-linear-gradient(180deg, rgba(23,199,255,1) 0%, rgba(157,243,255,1) 85%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(23,199,255,1) 0%, rgba(157,243,255,1) 85%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(180deg, rgba(23,199,255,1) 0%, rgba(157,243,255,1) 85%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#17c7ff",endColorstr="#ffffff",GradientType=1);
+    }
+    .step-arrow:before{
+        top: -1px;
+        border-width: 30px 50vw 0 50vw;
+        border-color: #fff transparent transparent transparent;
+    
+    }
+    .footer {padding: 0% 3rem;}
+    .recommed{position:absolute;top:-10%;width:50% !important;}
+    .footer div{padding: 8% 0 !important;}
     .news-list{right: -100%;}
     .news-list.show {right: 0%;width: 90%!important;}
     .news-list img{display: none;}
