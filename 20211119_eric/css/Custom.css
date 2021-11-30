@@ -85,6 +85,215 @@ body{width:100vw;height:100vh;overflow-x:hidden;font-family: Sarabun, sans-serif
     max-width: none;
     margin: 0;
 }
+
+/* registered */
+.bg-box{
+    top:0;
+    background:linear-gradient(180deg,rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%,rgba(23,199,255,1) 100%) ,url(../images/BG-2.jfif) no-repeat center/cover;
+    -webkit-filter:blur(5px);
+    z-index:0;
+}
+.data-box{
+    background:rgba(134,233,255,.5);
+    border-radius: 10px;
+    border: 4px solid #119bff;
+}
+.form-input{
+    display: block;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    background: hsla(0,0%,100%,.5);
+    border-radius: 5px;
+    color: #a8a8a8;
+    border: none;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+}
+.input-addon {
+    display: table-cell;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px 10px;
+    background: #e9e9e9;
+    border: 1px solid #ddd;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.checknum_img {
+    position: absolute;
+    width: 40%;
+    display: block;
+    right: 15px;
+    bottom: 16px;
+    height: 50px;
+}
+.poperrorMsg {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    bottom: 52px;
+    right: 15px;
+    width: auto;
+    background: #ff4ae1;
+    color: #fff;
+    line-height: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 3px 5px 0 rgb(0 0 0 / 30%);
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 30%);
+}
+.care-icon{height:20px;}
+.poperrorMsg:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin: auto;
+    right: 10px;
+    bottom: -6px;
+    display: block;
+    border-color: #ff4ae1 transparent transparent;
+    border-style: solid;
+    border-width: 7px 7px 0;
+}
+.sumbit-btn {
+    border:2px solid rgba(44,18,208,1);
+    border-radius:30px;
+    background: rgb(255,241,131);
+    background: -moz-linear-gradient(0deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+    background: linear-gradient(0deg, rgba(255,241,131,1) 0%, rgba(180,123,194,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff183",endColorstr="#b47bc2",GradientType=1);
+    color:#fff;
+    font-weight: bolder;
+}
+.step{
+    height: 140px;
+    background: rgb(55, 61, 63);
+    background: -moz-linear-gradient(90deg, rgba(23,199,255,1) 0%, rgba(157,243,255,1) 85%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(23,199,255,1) 0%, rgba(157,243,255,1) 85%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(23,199,255,1) 0%, rgba(157,243,255,1) 85%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#17c7ff",endColorstr="#ffffff",GradientType=1);
+}
+.step-arrow:before{
+    content:'';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 70px 0 70px 30px;
+    border-color: transparent transparent transparent #fff;
+}
+.main-word{color:#ff37db;text-shadow: 2px 2px 0px #fff,2px 0px 0px #fff,2px -2px 0px #fff,0px -2px 0px #fff,-2px -2px 0px #fff,-2px 0px 0px #fff,-2px 2px 0px #fff,0px 2px 0px #fff;}
+.waring{font-size:.7rem;color:#f00;}
+
+/* success */
+.suceful-page{height:calc(100vh - 56px);}
+.break-all{word-break:break-all;}
+.suceful-page .h1{color:#ffef0c;text-shadow: 2px 2px 0px #1119d0,2px 0px 0px #1119d0,2px -2px 0px #1119d0,0px -2px 0px #1119d0,-2px -2px 0px #1119d0,-2px 0px 0px #1119d0,-2px 2px 0px #1119d0,0px 2px 0px #1119d0;}
+.suceful-page .h3{color:#ff37db;text-shadow: 2px 2px 0px #fff,2px 0px 0px #fff,2px -2px 0px #fff,0px -2px 0px #fff,-2px -2px 0px #fff,-2px 0px 0px #fff,-2px 2px 0px #fff,0px 2px 0px #fff;}
+.suceful-page a{font-size:1rem;}
+
+.main-bg{
+    top: 0;
+    left: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    -webkit-filter:drop-shadow(5px 5px 0px #fff);
+}
+.circle{
+    bottom: 0%;
+    right: 15%;
+    width:200px;
+    height:0;
+    padding-bottom:200px;
+    border-radius:50%;
+    background:linear-gradient(-45deg,#6a59cc 10%,#3afdff 90%);
+}
+.circle:nth-child(1){
+    top: 5%;
+    right: 25%;
+    width: 30%;
+    padding-bottom: 30%;
+    z-index:-1;
+    background:linear-gradient(-90deg,#6a59cc 10%,#3afdff 90%);
+}
+.circle:nth-child(2){
+    bottom: 10%;
+    right: 35%;
+    width: 30%;
+    padding-bottom: 30%;
+    z-index:-1;
+    background:linear-gradient(-90deg,#6a59cc 10%,#3afdff 90%);
+}
+.circle:nth-child(6){
+    bottom: 20%;
+    right: 5%;
+    width:80px;
+    padding-bottom:80px;
+}
+.circle:nth-child(7){
+    top: 10%;
+    left:5%;
+    width:150px;
+    padding-bottom:150px;
+}
+.circle:nth-child(8){
+    top: 0%;
+    left:15%;
+    width:50px;
+    padding-bottom:50px;
+}
+.s-img:nth-child(9){top: 10%;left: 40%;width: 15%;}
+.s-img:nth-child(10){top: 23%;left: 57%;width: 10%;}
+.s-img:nth-child(11){bottom: -5%;left:15%;width: 10%;}
+.s-img:nth-child(12){bottom: 0%;left: 23%;width: 12%;}
+.footer{
+    padding: 10% 3rem;
+}
+.footer>div:nth-child(3)::before{
+    content:'';
+    position:absolute;
+    top:-15%;
+    left:-60%;
+    width:150%;
+    padding-bottom:150%;
+    background:url(../images/bubble.png)no-repeat center/contain;
+}
+.footer>div:nth-child(3)::after{
+    content:'';
+    position:absolute;
+    bottom:-15%;
+    right:-30%;
+    width:60%;
+    padding-bottom:60%;
+    background:url(../images/bubble2.png)no-repeat center/contain;
+    z-index:1;
+}
+.footer>div:nth-child(7)::before{
+    content:'';
+    position:absolute;
+    top:5%;
+    left:-50%;
+    width:100%;
+    padding-bottom:100%;
+    background:url(../images/bubble.png)no-repeat center/contain;
+}
+.other{padding:1% 0 !important;}
+
 @keyframes flashing {
     0%{
         background: rgb(251,38,38);
