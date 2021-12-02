@@ -1,7 +1,7 @@
-<!-- <?php
+<?php
 $country =  $_SERVER['HTTP_CF_IPCOUNTRY'];
 
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="th">
 <head>
