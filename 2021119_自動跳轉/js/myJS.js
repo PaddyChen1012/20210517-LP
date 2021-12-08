@@ -1,4 +1,4 @@
-if (country = "TW"){
+if (country == "TH"){
     window.onload = function (){
         setInterval(
             function myInterval(){
@@ -6,6 +6,4 @@ if (country = "TW"){
             }
         ,3000);
     }
-}else{
-    return
 }
