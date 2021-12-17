@@ -8,6 +8,7 @@
     background: linear-gradient(180deg,#ed4f88 0%,#942c81 100%);
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
+    z-index: 10;
 }
 .try-btn span{
     position: relative;
@@ -17,3 +18,4 @@
     color: #ffffff;
     -webkit-filter:drop-shadow(2px 2px 1px #333333);
 }
+.carousel-control-next{width: 100% !important;}
