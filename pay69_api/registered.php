@@ -141,12 +141,11 @@ if ($dataCheck) {
 <body>
     <div class="title position-fixed d-flex justify-content-between w-100 bg-black-50 p-2 z-1">
         <div class="h-100">
-            <a href="https://www.pay69slot.com/?pid=LPpage2&utm_source=BCLP&utm_medium=Ad&utm_campaign=Logo" target="_blank"><img src="images/pay69.png" class="h-100" alt=""></a>
+            <a href="https://www.pay69slot.com/?pid=EricFB01&utm_source=BCLP&utm_medium=Ad&utm_campaign=Logo" target="_blank"><img src="images/pay69.png" class="h-100" alt=""></a>
             <span class="d-inline-flex align-items-center h5 text-light title-word m-0 ml-2">Pay69Slotเว็บคาสิโนออนไลน์ที่รู้ใจผู้เล่นมากที่สุด</span>
         </div>
         <div class="h-100 d-flex align-items-center ">
-            <a class="btn-c d-flex align-items-center justify-content-center px-3 py-2 h-100 mr-2" href="https://www.pay69slot.com/?pid=LPpage2&utm_source=BCLP&utm_medium=Ad&utm_campaign=login">เข้าสู่ระบบ</a>
-            <a class="btn-c d-flex align-items-center justify-content-center px-3 py-2 h-100" href="index.html"><img src="images/home-b.png" class="h-100" alt=""><t class="pc-only ml-2">หน้าหลัก</t></a>
+            <a class="btn-c d-flex align-items-center justify-content-center px-3 py-2 h-100 mr-2" href="https://www.pay69slot.com/?pid=EricFB01&utm_source=BCLP&utm_medium=Ad&utm_campaign=login">เข้าสู่ระบบ</a>
         </div>
     </div>
     <div class="container-fluid main-place p-0">
@@ -193,23 +192,6 @@ if ($dataCheck) {
                 <div class="col-12 text-center mt-5"><input type="submit"  name="send" class="sumbit-btn py-3 px-5 flashing" value="ลงทะเบียน"></div>
                 
             </form>
-        </div>
-        <div class="row position-relative w-100 mx-auto">
-            <div class="col-12 col-md-4 text-center py-4 step">
-                <span class="d-block my-2 font-weight-bolder">ขั้นตอนที่ 1 แอดไลน์</span>
-                <span class="d-block my-2">Line ID : @818emawb</span>
-                <a href="https://m99.69slot.com/?utm_source=BCLP&utm_medium=Ad&utm_campaign=Rigister ">แอดไลน์ทันที</a>
-            </div>
-            <div class="col-12 col-md-4 text-center py-4 step step-arrow">
-                <span class="d-block my-2 font-weight-bolder">ขั้นตอนที่2 ทำความรู้จักกับเกม</span>
-                <span class="d-block my-2">เกมไหนแตกง่ายที่สุด?</span>
-                <a href="https://www.69slot.com/trick-for-grand-jackpot/?utm_source=LP&utm_medium=Register&utm_campaign=JackPot_Rec ">รู้จักตอนนี้</a>
-            </div>
-            <div class="col-12 col-md-4 text-center py-4 step step-arrow">
-                <span class="d-block my-2 font-weight-bolder">ขั้นตอนที่3 เล่นเกมสะดวกยิ่งขึ้น</span>
-                <span class="d-block my-2">ติดตั้ง APK บนมือถือ</span>
-                <a href="https://download.69slot.com/?utm_source=axecasino&utm_medium=Register&utm_campaign=download_link">ติดตั้งทันที</a>
-            </div>
         </div>
         <div class="footer text-center w-100 p-3 bg-dark text-light">Copyright © Pay69 . All rights reserved</div>
     </div>
