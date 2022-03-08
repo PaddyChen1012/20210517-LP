@@ -142,7 +142,6 @@ if ($dataCheck) {
     <div class="title position-fixed d-flex justify-content-between w-100 bg-black-50 p-2 z-1">
         <div class="h-100">
             <a href="https://www.pay69slot.com/?pid=EricFB01&utm_source=BCLP&utm_medium=Ad&utm_campaign=Logo" target="_blank"><img src="images/pay69.png" class="h-100" alt=""></a>
-            <span class="d-inline-flex align-items-center h5 text-light title-word m-0 ml-2">Pay69Slotเว็บคาสิโนออนไลน์ที่รู้ใจผู้เล่นมากที่สุด</span>
         </div>
         <div class="h-100 d-flex align-items-center ">
             <a class="btn-c d-flex align-items-center justify-content-center px-3 py-2 h-100 mr-2" href="https://www.pay69slot.com/?pid=EricFB01&utm_source=BCLP&utm_medium=Ad&utm_campaign=login">เข้าสู่ระบบ</a>
@@ -193,7 +192,6 @@ if ($dataCheck) {
                 
             </form>
         </div>
-        <div class="footer text-center w-100 p-3 bg-dark text-light">Copyright © Pay69 . All rights reserved</div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -213,7 +211,7 @@ switch ($data_info) {
                 $duplicated ='ชื่อบัญชีนี้มีคนใช้แล้ว';
                 break;
             case 'phoneNumber':
-                 echo '<script>alert("เบอร์โทรศัพท์นี้มีคนใช้แล้ว")</script>';
+                echo '<script>alert("เบอร์โทรศัพท์นี้มีคนใช้แล้ว")</script>';
                 $duplicated = 'เบอร์โทรศัพท์นี้มีคนใช้แล้ว';
                 break;
             default:
@@ -224,7 +222,7 @@ switch ($data_info) {
     case 'common.parameter.illegal':
         switch ($data_list['data']['field']) {
             case 'phoneNumber':
-                 echo '<script>alert("เบอร์โทรศัพท์นี้มีคนใช้แล้ว")</script>';
+                echo '<script>alert("เบอร์โทรศัพท์นี้มีคนใช้แล้ว")</script>';
                 $duplicated = 'เบอร์โทรศัพท์นี้มีคนใช้แล้ว';
                 break;
             default:

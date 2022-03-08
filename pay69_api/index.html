@@ -41,8 +41,24 @@
 
         gtag('config', 'G-ZTKZ1M40JE');
     </script>
+    <style>
+        .test{bottom: 10px;right: 10px;z-index: 10;}
+        .service-btn{cursor: pointer;border-radius: 50px;border: 2px solid rgba(44,18,208,1);}
+        .iframe-box{display: none;bottom: -5px;right: -5px;width: 360px;height: 480px;background: #000;}
+        .iframe-box.open{display: block;}
+        .colse-btn{top: 4%;right: 2%;width: 40px;height: 40px;background: #dfd839;border: 2px solid #787425;border-radius: 5px;cursor: pointer;color: #787425;}
+        @media screen and (any-hover: none) and (any-pointer:coarse) {
+            .iframe-box{display: none;bottom: -10px;right: -10px;width: 100vw;height: 100vh;background: #000;}
+        }
+    </style>
 </head>
 <body>
+    <div class="test position-fixed">
+        <button id="service_btn" class="service-btn p-3 flashing font-weight-bold text-light">บริการลูกค้า</button>
+        <div id="iframe_box" class="position-absolute iframe-box">
+            <button id="colse_btn" class="position-absolute colse-btn">x</button>
+        </div>
+    </div>
     <div class="title position-fixed d-flex justify-content-between w-100 bg-black-50 p-2 z-1">
         <div class="h-100">
             <a href="https://www.pay69slot.com/promotion/?pid=EricFB01&utm_source=google&utm_medium=ads&utm_campaign=lp2&utm_term=200coin" target="_blank"><img src="images/pay69.png" class="mr-2 h-100" alt=""></a>
@@ -161,7 +177,23 @@
         gtag('config', 'UA-192562276-2');
     </script>
     <script>    (function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }; t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt"; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, "clarity", "script", "7q6gvhzlxx");</script>
-
+    <script>
+        let serviceBtn = document.querySelector('#service_btn')
+        let colseBtn = document.querySelector('#colse_btn')
+        let serviceBox = document.querySelector('#iframe_box')
+        let open = function (){
+            serviceBox.classList.add('open')
+            const iframe = document.createElement('iframe')
+            iframe.setAttribute('src', 'https://bit.ly/2VLP0LH')
+            iframe.setAttribute('class', 'w-100 h-100')
+            serviceBox.appendChild(iframe)
+        }
+        let colse = function (){
+            serviceBox.classList.remove('open')
+        }
+        serviceBtn.addEventListener('click',open,false)
+        colseBtn.addEventListener('click',colse,false)
+    </script>
 
 </body>
 </html>
