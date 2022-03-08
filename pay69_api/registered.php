@@ -139,6 +139,12 @@ if ($dataCheck) {
     <!-- End Facebook Pixel Code -->
 </head>
 <body>
+<div class="service position-fixed">
+        <button id="service_btn" class="service-btn p-0 font-weight-bold text-light"><img class="service-img" src="images/service-btn.png" alt=""></button>
+        <div id="iframe_box" class="position-absolute iframe-box">
+            <button id="colse_btn" class="position-absolute colse-btn">x</button>
+        </div>
+    </div>
     <div class="title position-fixed d-flex justify-content-between w-100 bg-black-50 p-2 z-1">
         <div class="h-100">
             <a href="https://www.pay69slot.com/?pid=EricFB01&utm_source=BCLP&utm_medium=Ad&utm_campaign=Logo" target="_blank"><img src="images/pay69.png" class="h-100" alt=""></a>

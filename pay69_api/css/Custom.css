@@ -297,7 +297,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 
 
 /* serivce */
-.test{bottom: 10px;right: 10px;z-index: 10;}
+.service{bottom: 10px;right: 10px;z-index: 10;}
 .service-btn{cursor: pointer;background: transparent;border: none;}
 .service-img{height: 48px;}
 .iframe-box{display: none;bottom: -5px;right: -5px;width: 360px;height: 480px;background: #000;}
