@@ -295,6 +295,18 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 }
 .other{padding:1% 0 !important;}
 
+
+/* serivce */
+.test{bottom: 10px;right: 10px;z-index: 10;}
+.service-btn{cursor: pointer;background: transparent;border: none;}
+.service-img{height: 48px;}
+.iframe-box{display: none;bottom: -5px;right: -5px;width: 360px;height: 480px;background: #000;}
+.iframe-box.open{display: block;}
+.colse-btn{top: 4%;right: 2%;width: 40px;height: 40px;background: #dfd839;border: 2px solid #787425;border-radius: 5px;cursor: pointer;color: #787425;}
+@media screen and (any-hover: none) and (any-pointer:coarse) {
+    .iframe-box{display: none;bottom: -10px;right: -10px;width: 100vw;height: 100vh;background: #000;}
+}
+
 @keyframes flashing {
     0%{
         background: rgb(251,38,38);

@@ -41,20 +41,10 @@
 
         gtag('config', 'G-ZTKZ1M40JE');
     </script>
-    <style>
-        .test{bottom: 10px;right: 10px;z-index: 10;}
-        .service-btn{cursor: pointer;border-radius: 50px;border: 2px solid rgba(44,18,208,1);}
-        .iframe-box{display: none;bottom: -5px;right: -5px;width: 360px;height: 480px;background: #000;}
-        .iframe-box.open{display: block;}
-        .colse-btn{top: 4%;right: 2%;width: 40px;height: 40px;background: #dfd839;border: 2px solid #787425;border-radius: 5px;cursor: pointer;color: #787425;}
-        @media screen and (any-hover: none) and (any-pointer:coarse) {
-            .iframe-box{display: none;bottom: -10px;right: -10px;width: 100vw;height: 100vh;background: #000;}
-        }
-    </style>
 </head>
 <body>
     <div class="test position-fixed">
-        <button id="service_btn" class="service-btn p-3 flashing font-weight-bold text-light">บริการลูกค้า</button>
+        <button id="service_btn" class="service-btn p-0 font-weight-bold text-light"><img class="service-img" src="images/service-btn.png" alt=""></button>
         <div id="iframe_box" class="position-absolute iframe-box">
             <button id="colse_btn" class="position-absolute colse-btn">x</button>
         </div>
