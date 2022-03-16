@@ -145,12 +145,9 @@ if ($dataCheck) {
             <button id="colse_btn" class="position-absolute colse-btn">x</button>
         </div>
     </div>
-    <div class="title position-fixed d-flex justify-content-between w-100 bg-black-50 p-2 z-1">
+    <div class="title position-fixed d-flex justify-content-center w-100 bg-black-50 p-2 z-1">
         <div class="h-100">
-            <a href="https://www.pay69slot.com/?pid=EricFB01&utm_source=BCLP&utm_medium=Ad&utm_campaign=Logo" target="_blank"><img src="images/pay69.png" class="h-100" alt=""></a>
-        </div>
-        <div class="h-100 d-flex align-items-center ">
-            <a class="btn-c d-flex align-items-center justify-content-center px-3 py-2 h-100 mr-2" href="https://www.pay69slot.com/?pid=EricFB01&utm_source=BCLP&utm_medium=Ad&utm_campaign=login">เข้าสู่ระบบ</a>
+            <img src="images/pay69.png" class="h-100" alt="">
         </div>
     </div>
     <div class="container-fluid main-place p-0">
@@ -274,10 +271,10 @@ switch ($data_info) {
     document.getElementById("numImg").src = `data:image/jpeg;base64,${data}`;
 
     function toBase64(arr) {
-    //arr = new Uint8Array(arr) if it's an ArrayBuffer
-    return btoa(
-        arr.reduce((data, byte) => data + String.fromCharCode(byte), '')
-    );
+        //arr = new Uint8Array(arr) if it's an ArrayBuffer
+        return btoa(
+            arr.reduce((data, byte) => data + String.fromCharCode(byte), '')
+        );
     }
 
     function getCaptchaData() {

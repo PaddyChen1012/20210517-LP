@@ -329,6 +329,7 @@ body{width:100vw;height:100vh;overflow-x:hidden;}
 }
 @media screen and (max-width:500px) {
     .position-ph-relative{position:relative !important;}
+    .title{height:80px;}
     .title-word{display:none !important;}
     .pc-none{display:none !important;}
     .ph-bclock{display:block !important;}
