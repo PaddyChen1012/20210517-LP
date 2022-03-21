@@ -139,11 +139,8 @@ if ($dataCheck) {
     <!-- End Facebook Pixel Code -->
 </head>
 <body>
-<div class="service position-fixed">
-        <button id="service_btn" class="service-btn p-0 font-weight-bold text-light"><img class="service-img" src="images/service-btn.png" alt=""></button>
-        <div id="iframe_box" class="position-absolute iframe-box">
-            <button id="colse_btn" class="position-absolute colse-btn">x</button>
-        </div>
+    <div class="service position-fixed">
+        <a href="https://lin.ee/vxVaeCF"><img class="service-img" src="images/service-btn.png" alt=""></a>
     </div>
     <div class="title position-fixed d-flex justify-content-center w-100 bg-black-50 p-2 z-1">
         <div class="h-100">
@@ -200,23 +197,6 @@ if ($dataCheck) {
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script>
-        let serviceBtn = document.querySelector('#service_btn')
-        let colseBtn = document.querySelector('#colse_btn')
-        let serviceBox = document.querySelector('#iframe_box')
-        let open = function (){
-            serviceBox.classList.add('open')
-            const iframe = document.createElement('iframe')
-            iframe.setAttribute('src', 'https://bit.ly/2VLP0LH')
-            iframe.setAttribute('class', 'w-100 h-100')
-            serviceBox.appendChild(iframe)
-        }
-        let colse = function (){
-            serviceBox.classList.remove('open')
-        }
-        serviceBtn.addEventListener('click',open,false)
-        colseBtn.addEventListener('click',colse,false)
-    </script>
 </body>
 </html>
 
