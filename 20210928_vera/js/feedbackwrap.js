@@ -50,6 +50,12 @@ function animate(ele,cssObj,fn){
 
 // 1.给每个图片设置相应的位置，透明度，层级
 var spinArr = [
+    {   
+        width:40,
+        left:0,
+        opacity:.1,
+        zIndex:1
+    },
     {  
         width:60,
         left:-30,
@@ -79,6 +85,18 @@ var spinArr = [
         left:130,
         opacity:.1,
         zIndex:2
+    },
+    {  
+        width:40,
+        left:0,
+        opacity:.1,
+        zIndex:1
+    },
+    {   
+        width:20,
+        left:50,
+        opacity:.1,
+        zIndex:0
     }
 ]
 // 2.获取相应的元素
