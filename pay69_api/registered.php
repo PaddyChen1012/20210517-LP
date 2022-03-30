@@ -112,6 +112,9 @@ if ($dataCheck) {
     <link rel="icon" href="images/pay69_circle.png" type="image/x-icon">
     <link rel="shortcut icon" href="images/pay69_circle.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/Custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Kanit:ital,wght@0,900;1,900&family=Maitree:wght@500&display=swap" rel="stylesheet">
     <title>Registration page</title>
     <!-- START ExoClick Goal Tag | 2021BC_Register -->
     <script type="application/javascript" src="https://a.exoclick.com/tag_gen.js" data-goal="77c7abe99494401c6747160510290996"></script>
@@ -149,47 +152,76 @@ if ($dataCheck) {
     </div>
     <div class="container-fluid main-place p-0">
         <!-- First Page -->
-        <div class="row w-100 mx-auto align-items-end justify-content-center align-items-md-center" style="background:url(images/1200x500-BG.jpg)no-repeat center/cover;">
-            <div class="col-12 col-md-5 position-relative p-0 mx-auto">
-                <div class="title"></div>
-                <div class="position-relative">
-                    <img src="images/text.png" class="w-100" alt="">
-                </div>
-            </div>
+        <div class="row w-100 mx-auto align-items-end justify-content-center align-items-md-center">
+            <img src="images/Web_1920x500.jpg" class="w-100 ph-none">
+            <img src="images/Mobile_375x300.jpg" class="w-100 pc-none">
         </div>
         <div class="row position-relative w-100 mx-auto align-items-end justify-content-center align-items-md-center py-5 mb-0">
             <div class="bg-box position-absolute w-100 h-100"></div>
-            <form  class="col-11 col-md-10 row position-relative w-100 mx-auto data-box py-4 px-0 bg-white-50" method="post">
-                <div class="col-12 h1 text-center main-word">สมัคร</div>
-                <div class="col-12 col-md-6">
-                    <span class="d-block w-100 my-2 h3">ยูสเซอร์：</span>
-                    <input type="text" name="username" placeholder="กรุณาใส่ชื่อผู้ใช้" maxlength="16" autocomplete="off" class="form-input w-100">
+            <div class="col-11 col-md-5 row justify-content-center position-relative mx-3 py-3 bg-transparent ph-none">
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.1.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.103.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.27.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.30.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.35.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.37.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.39.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.49.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.51.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.54.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.55.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.57.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.61.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.62.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.63.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.66.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.68.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.70.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.71.png"></a>
+                <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.95.png"></a>
+            </div>
+            <form  class="col-11 col-md-3 row position-relative w-100 mx-3 data-box py-4 px-0 bg-white-50" method="post">
+                <div class="col-12 h1 text-center p-3 m-0 main-word font-weight-bold">สมัคร</div>
+                <div class="col-12 p-4">
+                    <div name="input-box" class="position-relative d-flex align-items-center w-100">
+                        <label for="username" class="form-label m-0 px-2">ยูสเซอร์</label>
+                        <input type="text" id="username" name="username" maxlength="16" autocomplete="off" class="form-input w-100">
+                    </div>
                     <!-- 帳號格式錯誤或沒輸入 -->
-                    <div class="waring"><?php echo @$name_Vf; echo @$erro_name; ?></div>
+                    <div class="waring mt-1"><?php echo @$name_Vf; echo @$erro_name; ?></div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <span class="d-block w-100 my-2 h3">รหัสผ่าน：</span>
-                    <input type="password" name="pwd" placeholder="กรุณาใส่รหัสผ่าน" maxlength="16" autocomplete="off" class="form-input w-100">
+                <div class="col-12 p-4">
+                    <div name="input-box" class="position-relative d-flex align-items-center w-100">
+                        <label for="pws" class="form-label m-0 px-2">รหัสผ่าน</label>
+                        <input id="pws" type="password" name="pwd" maxlength="16" autocomplete="off" class="form-input w-100">
+                    </div>
+                        
                     <!-- 密碼格式錯誤或沒輸入 -->
-                    <div class="waring"><?php echo @$pwd_Vf; echo @$erro_pwd; ?></div>
+                    <div class="waring mt-1"><?php echo @$pwd_Vf; echo @$erro_pwd; ?></div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <span class="d-block w-100 my-2 h3">เบอร์โทรศัพท์มือถือ：</span>
-                    <input type="text" name="phoneNumber" placeholder="กรุณาใส่เบอร์โทรศัพท์มือถือ" maxlength="16" autocomplete="off" class="form-input w-100">
+                <div class="col-12 p-4">
+                    <div name="input-box" class="position-relative d-flex align-items-center w-100">
+                        <label for="tel" class="form-label m-0 px-2">เบอร์โทรศัพท์มือถือ</label>
+                        <input id="tel" type="text" name="phoneNumber" maxlength="16" autocomplete="off" class="form-input w-100">
+                    </div>
+                        
                     <!-- 手機格式錯誤或沒輸入 -->
-                    <div class="waring"><?php echo @$phone_Vf; echo @$erro_phone; ?></div>
+                    <div class="waring mt-1"><?php echo @$phone_Vf; echo @$erro_phone; ?></div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <span class="d-block w-100 my-2 h3">รหัสยืนยัน：</span>
-                    <input type="text" name="captcha" placeholder="รหัสยืนยัน" maxlength="16" autocomplete="off" class="form-input w-100">
-                    <div class="input-addon checknum_img"><img src="" id="numImg" class="Captcha" alt="Captcha"/></div>
+                <div class="col-12 p-4">
+                    <div name="input-box" class="position-relative d-flex align-items-center w-100">
+                        <label for="num" class="form-label m-0 px-2">รหัสยืนยัน</label>
+                        <input id="num" type="text" name="captcha" maxlength="16" autocomplete="off" class="form-input w-100">
+                        <div class="input-addon checknum_img"><img src="" id="numImg" class="Captcha" alt="Captcha"/></div>
+                    </div>
                     <!-- 驗證碼錯誤或者沒輸入 -->
-                    <div class="waring"><?php echo @$erro_Vf; ?></div>
+                    <div class="waring mt-1"><?php echo @$erro_Vf; ?></div>
                 </div>
                 <input type="hidden" name="captchaUid" value="<?= $captcha ?>">
                 <input type="hidden" name="agentShortName" value="<?= $agentShortName ?>">
-                <div class="col-12 text-center mt-5"><input type="submit"  name="send" class="sumbit-btn py-3 px-5 flashing" value="ลงทะเบียน"></div>
-                
+                <div class="col-12 text-center mt-2">
+                    <input type="submit"  name="send" class="sumbit-btn py-3 px-5 flashing" value="ลงทะเบียน">
+                </div>
             </form>
         </div>
     </div>
@@ -261,6 +293,19 @@ switch ($data_info) {
         return <?php echo $captcha_json ?>;
     }
     // console.log(data);
+</script>
+<script>
+    let input = document.querySelectorAll('[name=input-box] input')
+    for(let i=0; i<input.length; i++){
+        input[i].addEventListener('blur',function(){
+            if(input[i].value == ""){
+                input[i].previousElementSibling.classList.remove('active')
+            }
+        })
+        input[i].addEventListener('focus',function(){
+            input[i].previousElementSibling.classList.add('active')
+        })
+    }
 </script>
 
 <!-- START ExoClick Goal Tag | 2021BC_Register -->
