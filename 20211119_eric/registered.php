@@ -112,28 +112,13 @@ if ($dataCheck) {
     <link rel="icon" href="images/pay69_circle.png" type="image/x-icon">
     <link rel="shortcut icon" href="images/pay69_circle.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/Custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Kanit:ital,wght@0,900;1,900&family=Maitree:wght@500&display=swap" rel="stylesheet">
     <title>Registration page</title>
     <!-- START ExoClick Goal Tag | 2021BC_Register -->
     <script type="application/javascript" src="https://a.exoclick.com/tag_gen.js" data-goal="77c7abe99494401c6747160510290996"></script>
     <!-- END ExoClick Goal Tag | 2021BC_Register -->
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s){
-            if(f.fbq)return;
-            n=f.fbq=function(){
-                n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)
-            };
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)
-        }
-        (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '579279866679710');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=579279866679710&ev=PageView&noscript=1"/></noscript>
-    <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <div class="title position-fixed d-flex justify-content-between w-100 bg-black-50 p-2 z-1">
@@ -228,7 +213,7 @@ switch ($data_info) {
                 $duplicated ='ชื่อบัญชีนี้มีคนใช้แล้ว';
                 break;
             case 'phoneNumber':
-                 echo '<script>alert("เบอร์โทรศัพท์นี้มีคนใช้แล้ว")</script>';
+                echo '<script>alert("เบอร์โทรศัพท์นี้มีคนใช้แล้ว")</script>';
                 $duplicated = 'เบอร์โทรศัพท์นี้มีคนใช้แล้ว';
                 break;
             default:
@@ -239,7 +224,7 @@ switch ($data_info) {
     case 'common.parameter.illegal':
         switch ($data_list['data']['field']) {
             case 'phoneNumber':
-                 echo '<script>alert("เบอร์โทรศัพท์นี้มีคนใช้แล้ว")</script>';
+                echo '<script>alert("เบอร์โทรศัพท์นี้มีคนใช้แล้ว")</script>';
                 $duplicated = 'เบอร์โทรศัพท์นี้มีคนใช้แล้ว';
                 break;
             default:
