@@ -133,7 +133,7 @@ if ($dataCheck) {
         <!-- First Page -->
         <div class="row w-100 mx-auto align-items-end justify-content-center align-items-md-center">
             <img src="images/Web_1920x500.jpg" class="w-100 ph-none">
-            <img src="images/Mobile_375x300.jpg" class="w-100 pc-none">
+            <img src="images/AD0324-2_720x480.jpg" class="w-100 pc-none">
         </div>
         <div class="row position-relative w-100 mx-auto align-items-end justify-content-center align-items-md-center py-5 mb-0">
             <div class="bg-box position-absolute w-100 h-100"></div>
