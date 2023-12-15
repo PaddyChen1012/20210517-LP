@@ -1,5 +1,7 @@
-<script src="https://bundle.run/buffer"></script>
+<!-- <script src="https://bundle.run/buffer"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/buffer@6.0.3/index.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@oslab/btoa@0.1.0/browser-btoa.min.js"></script>
+<script src="js/ys-event-min.js"></script> 
 
 <?php
 function send_data($url, $data )
@@ -15,7 +17,7 @@ function send_data($url, $data )
 }
 	
 $data_captcha = send_data(
-	$url = 'https://www.pay69slot.com/service/auth/captcha?t=' . time(),
+	$url = 'https://www.pay69.vip/service/auth/captcha?t=' . time(),
     $data = [
     ]
 );
@@ -93,15 +95,17 @@ else{
 
 #確認所有欄位都經過驗證，再送資料給ocms-api
 if ($dataCheck) {
-    $data_list = send_data($url = 'https://www.pay69slot.com/service/member', $data);
+    $data_list = send_data($url = 'https://www.pay69.vip/service/member', $data);
+    // ysTrackEvent('8mklhs');
 }
 // echo '<pre>';
-// print_r($data);
+// print_r($data_captcha);
 // echo '</pre>';
-
+// //
 // echo '<pre>';
 // print_r($data_list);
 // echo '</pre>';
+// exit;
 ?>
 
 <html lang="th">
@@ -159,7 +163,7 @@ if ($dataCheck) {
                 <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.71.png"></a>
                 <a href="https://www.pay69slot.com?pid=EricFB01" class="text-center logo-box"><img class="game-logo" src="images/logo/Platform.95.png"></a>
             </div>
-            <form  class="col-11 col-md-3 row position-relative w-100 mx-3 data-box py-4 px-0 bg-white-50" method="post">
+            <form id="member-form" class="col-11 col-md-3 row position-relative w-100 mx-3 data-box py-4 px-0 bg-white-50" method="post">
                 <div class="col-12 h1 text-center p-3 m-0 main-word font-weight-bold">สมัคร</div>
                 <div class="col-12 p-4">
                     <div name="input-box" class="position-relative d-flex align-items-center w-100">
@@ -203,6 +207,10 @@ if ($dataCheck) {
                 </div>
             </form>
         </div>
+        <a class="w-100 z-1" href="#member-form"><img class="w-100" src="images/1.jpg" alt=""></a>
+        <a class="w-100 z-1" href="#member-form"><img class="w-100" src="images/2.jpg" alt=""></a>
+        <a class="w-100 z-1" href="#member-form"><img class="w-100" src="images/3.jpg" alt=""></a>
+        <a class="w-100 z-1" href="#member-form"><img class="w-100" src="images/4.jpg" alt=""></a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -242,7 +250,7 @@ switch ($data_info) {
         }
         break;
     case 'common.success':
-            echo '<script>location.href="/suceful.html?user='. $data['username'].'";</script>';
+            echo '<script>location.href="/suceful.html?user='. $data['username'].'";ysTrackEvent("1glpe8")</script>';
             $duplicated = 'สมัครสำเร็จ';
         break;
     case 'common.captcha.wrong':
@@ -275,6 +283,7 @@ switch ($data_info) {
 </script>
 <script>
     let input = document.querySelectorAll('[name=input-box] input')
+    console.log(input);
     for(let i=0; i<input.length; i++){
         input[i].addEventListener('blur',function(){
             if(input[i].value == ""){
